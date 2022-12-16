@@ -354,13 +354,9 @@ button {
 }
 
 .header__logo {
-    max-width: 60px;
+    max-width: 150px;
     transition: 1s;
     cursor: pointer;
-}
-
-.header__logo:hover {
-    transform: rotate(180deg);
 }
 
 .menu {
@@ -650,10 +646,6 @@ button {
         font-size: 35px;
     }
 
-    .header__logo {
-        max-width: 40px;
-    }
-
     .home {
         padding: 120px 0 40px;
     }
@@ -752,6 +744,10 @@ button {
 
     .nav {
         display: none;
+    }
+
+    .header__logo {
+        max-width: 120px;
     }
 
     .home {
