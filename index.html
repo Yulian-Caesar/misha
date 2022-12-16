@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Misha title</title>
+    <title>Svit Barbershop</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;900&display=swap" rel="stylesheet">
@@ -16,9 +16,9 @@
         <div class="container">
             <div class="header-wrap">
                 <div class="header__logo">
-                    <img src="images/logo-light2.png" alt="Logo image">
+                    <img src="images/logo.svg" alt="Logo">
                 </div>
-                <nav>
+                <nav class="nav">
                     <ul class="menu" id="menu">
                         <li class="menu__item">
                             <a class="menu__link" href="#home">Головна</a>
@@ -30,16 +30,15 @@
                             <a class="menu__link" href="#services">Послуги</a>
                         </li>
                         <li class="menu__item">
-                            <a class="menu__link" href="#team">Команда</a>
-                        </li>
-                        <li class="menu__item">
-                            <a class="menu__link" href="#price">Ціна</a>
-                        </li>
-                        <li class="menu__item">
-                            <a class="menu__link" href="#contact">Контакти</a>
+                            <a class="menu__link" href="#contacts">Контакти</a>
                         </li>
                     </ul>
                 </nav>
+                <button class="menu-toggle">
+                    <span></span>
+                    <span></span>
+					<span></span>
+                </button>
             </div>
         </div>
     </header>
@@ -47,8 +46,10 @@
     <div class="home" id="home">
         <div class="container">
             <div class="home-wrap">
-                <h1>Головний текст на сторінці</h1>
-                <a class="button" target="_blank" href="https://instagram.com/mishabarber1?igshid=NDk5N2NlZjQ=">Записатися</a>
+                <div class="home__logo">
+                    <img src="images/logo.svg" alt="Logo">
+                </div>
+                <button class="button toggle-popup">Записатися</button>
             </div>
         </div>
     </div>
@@ -89,7 +90,7 @@
             <div class="services__content">
                 <h2 class="title">Наші послуги</h2>
                 <p class="services__text">
-                    Barbershop пропонує чоловічі стрижки світового рівня, 
+                    Ми пропонуємо чоловічі стрижки світового рівня, 
                     догляд за бородами та гоління гарячою бритвою. Ось лише деякі з послуг, якими ми відомі.
                 </p>
             </div>
@@ -128,97 +129,127 @@
         </div>
     </div>
 
-    <div class="team" id="team">
+    <div class="contacts" id="contacts">
         <div class="container">
-            <div class="team-wrap">
-                <h2 class="title team__title">Наша команда</h2>
-                <span class="team__subtitle">
-                    We employ only highly qualified barbers who are not just professionals,
-                    but also enjoy maintaining the atmosphere of a classic barbershop.
-                </span>
-                <div class="team__list">
-                    <div class="team__list-item">
-                        <img class="team__list-img" src="images/team1.png" alt="Our team">
-                        <div class="team__list-content">
-                            <span class="team__list-name">Михайло "Вікінг" Ющишен</span>
-                            <p class="team__list-descr">
-                                Розповідь про себе
-                            </p>
-                            <ul class="team__social">
-                                <li class="team__social-item">
-                                    <a class="team__social-link" target="_blank" href="https://instagram.com/mishabarber1?igshid=NDk5N2NlZjQ=">
-                                        <img src="images/instagram.png" alt="Instagram">
-                                    </a>
-                                </li>
-                                <li class="team__social-item">
-                                    <a class="team__social-link" target="_blank" href="https://instagram.com/mishabarber1?igshid=NDk5N2NlZjQ=">
-                                        <img src="images/facebook.png" alt="Facebook">
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
+            <div class="contacts-wrap">
+                <div class="contacts__item">
+                    <div class="contacts__logo">
+                        <img src="images/logo2.svg" alt="Logo">
                     </div>
-                    <div class="team__list-item">
-                        <img class="team__list-img" src="images/team2.png" alt="Our team">
-                        <div class="team__list-content">
-                            <span class="team__list-name">Ганна "Сакура" Римар</span>
-                            <p class="team__list-descr">
-                                Розповідь про себе
-                            </p>
-                            <ul class="team__social">
-                                <li class="team__social-item">
-                                    <a class="team__social-link" target="_blank" href="https://instagram.com/barber_rmr.an?igshid=NDk5N2NlZjQ=">
-                                        <img src="images/instagram.png" alt="Instagram">
-                                    </a>
-                                </li>
-                                <li class="team__social-item">
-                                    <a class="team__social-link" target="_blank" href="https://instagram.com/barber_rmr.an?igshid=NDk5N2NlZjQ=">
-                                        <img src="images/facebook.png" alt="Facebook">
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="team__list-item">
-                        <img class="team__list-img" src="images/team3.jpeg" alt="Our team">
-                        <div class="team__list-content">
-                            <span class="team__list-name">Кирило "Генерал" Буданов</span>
-                            <p class="team__list-descr">
-                                Кримський міст бачили?)))
-                            </p>
-                            <ul class="team__social">
-                                <li class="team__social-item">
-                                    <a class="team__social-link" target="_blank" href="">
-                                        <img src="images/instagram.png" alt="Instagram">
-                                    </a>
-                                </li>
-                                <li class="team__social-item">
-                                    <a class="team__social-link" target="_blank" href="">
-                                        <img src="images/facebook.png" alt="Facebook">
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
+                    <span class="contacts__slogan">
+                        Наш барбершоп створений для чоловіків, які цінують першокласну якість, час і бездоганний вигляд.
+                    </span>
+                    <ul class="social">
+                        <li class="social__item">
+                            <a class="social__link" href="https://instagram.com/svit_barbershop2022?igshid=NDk5N2NlZjQ=">
+                                <img src="images/instagram.png" alt="instagram">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="contacts__item">
+                    <span class="contacts__item-title">Контакти</span>
+                    <ul class="contacts__list">
+                        <li class="contacts__list-item">
+                            <span class="contacts__list-icon">
+                                <img src="images/phone.png" alt="Phone">
+                            </span>
+                            <a class="contacts__link" href="tel:380681886866">(068) 188-68-66</a>
+                        </li>
+                        <li class="contacts__list-item">
+                            <span class="contacts__list-icon">
+                                <img src="images/email.png" alt="Email">
+                            </span>
+                            <a class="contacts__link" href="mailto:yulik19971997@gmail.com">yulik19971997@gmail.com</a>
+                        </li>
+                        <li class="contacts__list-item">
+                            <span class="contacts__list-icon">
+                                <img src="images/point.png" alt="Address">
+                            </span>
+                            Одеса, Ніжинська 73
+                        </li>
+                    </ul>
+                </div>
+                <div class="contacts__item">
+                    <span class="contacts__item-title">Графік роботи</span>
+                    <div class="contacts__item-wrap">
+                        <ul class="contacts__list">
+                            <li class="contacts__list-item">Понеділок - Пятниця:</li>
+                            <li class="contacts__list-item">Субота - Неділя:</li>
+                        </ul>
+                        <ul class="contacts__list">
+                            <li class="contacts__list-item">10:00 - 20:00</li>
+                            <li class="contacts__list-item">12:00 - 20:00</li>
+                        </ul>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 
-    <div class="price" id="price">
+    <footer class="footer" id="footer">
         <div class="container">
-            <div class="price-wrap">
-                <div class="price__img">
-                    <img src="images/we.png" alt="Our photo">
-                </div>
-                <ul class="price__list">
-                    <li class="price__list-item">
-                        Стрижка <span class="">500грн</span>
-                    </li>
-                </ul>
+            <div class="footer-wrap">
+                <span class="copyright">
+                    © 2022 Svit Barbershop
+                </span>
+            </div>
+        </div>
+    </footer>
+
+    <button class="callme toggle-popup" id="callme">
+        <img src="images/phone.png" alt="Phone">
+    </button>
+
+    <div class="popup" id="popup">
+        <div class="popup__container">
+            <button class="popup__close-button toggle-popup">
+                <span></span>
+                <span></span>
+            </button>
+            <div class="popup__content">
+                <a class="popup__content-item" href="https://instagram.com/mishabarber1?igshid=NDk5N2NlZjQ=">
+                    <img src="images/man.png" alt="man">
+                    <span class="popup__content-text">Записатися<br> до Михайла</span>
+                </a>
+                <a class="popup__content-item" href="https://instagram.com/barber_rmr.an?igshid=NDk5N2NlZjQ=">
+                    <img src="images/girl.png" alt="girl">
+                    <span class="popup__content-text">Записатися<br> до Анни</span>
+                </a>
             </div>
         </div>
     </div>
+
+    <div class="sidebar" id="sidebar">
+		<div class="sidebar__close">
+			<button class="sidebar__close-button">
+				Закрити
+                <div class="sidebar__close-icon">
+                    <span></span>
+                    <span></span>
+                </div>
+            </button>
+		</div>
+		<div class="sidebar__overflow">
+			<ul class="sidebar__menu" id="sidebar__menu">
+				<li class="sidebar__menu-item active">
+                    <a class="sidebar__menu-number" href="tel:380681886866">(068) 188-68-66</a>
+                </li>
+				<li class="sidebar__menu-item">
+                    <a class="sidebar__menu-link" href="#home">Головна</a>
+                </li>
+				<li class="sidebar__menu-item">
+                    <a class="sidebar__menu-link yulik" href="#about">Про нас</a>
+                </li>
+				<li class="sidebar__menu-item">
+                    <a class="sidebar__menu-link" href="#services">Послуги</a>
+                </li>
+				<li class="sidebar__menu-item">
+                    <a class="sidebar__menu-link" href="#contacts">Контакти</a>
+                </li>
+			</ul>
+		</div>
+	</div>
 
     <script type="text/javascript" src="jQuery.js"></script>
     <script type="text/javascript" src="custom.js"></script>
