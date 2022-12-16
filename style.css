@@ -338,18 +338,13 @@ button {
 
 /* Header START */
 .header {
-    position: absolute;
+    position: fixed;
     left: 0;
     right: 0;
     top: 0;
     padding: 20px 0;
     z-index: 10;
-}
-
-.header.fixed {
-    position: fixed;
-    background-color: white;
-    box-shadow: -3px 0px 30px -2px rgb(0 0 0 / 9%);
+    background: white;
 }
 
 .header-wrap {
@@ -747,11 +742,6 @@ button {
 
     .title {
         font-size: 30px;
-    }
-
-    .header {
-        background: white;
-        position: fixed;
     }
 
     .nav {
