@@ -608,12 +608,6 @@ button {
 }
 /* Footer END */
 
-.about,
-.contacts,
-.services {
-    scroll-margin-top: 80px;
-}
-
 @media screen and (max-width: 1259px){
     .container {
         padding: 0 20px;
