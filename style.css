@@ -68,27 +68,6 @@ button {
 
 /* Keyfames START */
 
-@keyframes rotation {
-    from {
-        transform: rotate(0deg);
-    }
-    to {
-        transform: rotate(360deg);
-    }
-}
-
-@keyframes shake {
-    0% {
-        transform: translate(0, 0);
-    }
-    50% {
-        transform: translate(0, 10px);
-    }
-    100% {
-        transform: translate(0, 0);
-    }
-}
-
 @keyframes action-ripple {
 	0% {
         box-shadow: 0 10px 20px rgba(155, 155, 155, 0.4),
@@ -465,7 +444,6 @@ button {
 }
 
 .home__logo {
-    animation: rotation 20s infinite linear;
     margin: 0 auto 40px;
     max-width: 600px;
 }
@@ -569,7 +547,6 @@ button {
 .services__list-icon {
     display: block;
     margin: 0 auto 20px;
-    animation: shake 2s infinite linear;
 }
 
 .services__list-title {
