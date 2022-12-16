@@ -777,6 +777,11 @@ button {
         font-size: 30px;
     }
 
+    .header {
+        background: white;
+        position: fixed;
+    }
+
     .nav {
         display: none;
     }
