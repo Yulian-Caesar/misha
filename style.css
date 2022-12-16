@@ -68,6 +68,28 @@ button {
 
 /* Keyfames START */
 
+
+@keyframes rotation {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes shake {
+    0% {
+        transform: translate(0, 0);
+    }
+    50% {
+        transform: translate(0, 10px);
+    }
+    100% {
+        transform: translate(0, 0);
+    }
+}
+
 /* Keyfames END */
 
 /* General styles START */
@@ -128,10 +150,6 @@ button {
 	align-items: center;
     border: 1px solid black;
     cursor: pointer;
-}
-
-
-.callme img {
 }
 
 .popup {
@@ -409,6 +427,7 @@ button {
 }
 
 .home__logo {
+    animation: rotation 20s infinite linear;
     margin: 0 auto 40px;
     max-width: 600px;
 }
@@ -512,6 +531,7 @@ button {
 .services__list-icon {
     display: block;
     margin: 0 auto 10px;
+    animation: shake 2s infinite linear;
 }
 
 .services__list-title {
